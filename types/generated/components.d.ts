@@ -55,6 +55,8 @@ export interface SharedTestimonial extends Struct.ComponentSchema {
   attributes: {
     age: Schema.Attribute.String;
     author: Schema.Attribute.String & Schema.Attribute.Required;
+    color: Schema.Attribute.String &
+      Schema.Attribute.CustomField<'plugin::color-picker.color'>;
     quoteText_EN: Schema.Attribute.Text & Schema.Attribute.Required;
     quoteText_ES: Schema.Attribute.Text;
     title: Schema.Attribute.String & Schema.Attribute.Required;
