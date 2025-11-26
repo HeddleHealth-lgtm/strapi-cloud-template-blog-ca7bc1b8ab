@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_shared_testimonials",
+  "info": {
+    "displayName": "testimonial",
+    "icon": "message"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "quoteText_EN": {
+      "type": "text",
+      "required": true
+    },
+    "quoteText_ES": {
+      "type": "text"
+    },
+    "author": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "age": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

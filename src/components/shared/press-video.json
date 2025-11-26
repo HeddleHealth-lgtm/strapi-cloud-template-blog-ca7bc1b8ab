@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_press_videos",
+  "info": {
+    "displayName": "press-video"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "video": {
+      "type": "component",
+      "component": "shared.video-source",
+      "repeatable": false
+    },
+    "logo": {
+      "type": "component",
+      "component": "shared.image-source",
+      "repeatable": false
+    },
+    "linkUrl": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

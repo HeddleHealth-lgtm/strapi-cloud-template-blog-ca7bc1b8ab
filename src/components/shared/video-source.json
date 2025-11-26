@@ -1,0 +1,54 @@
+{
+  "collectionName": "components_shared_video_sources",
+  "info": {
+    "displayName": "VideoSource",
+    "icon": "play"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "upload",
+        "external"
+      ]
+    },
+    "file": {
+      "type": "media",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "type"
+            },
+            "upload"
+          ]
+        }
+      },
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "url": {
+      "type": "string",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "type"
+            },
+            "external"
+          ]
+        }
+      }
+    },
+    "altDesc": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
