@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_shared_featured_stories",
+  "info": {
+    "displayName": "featured-stories",
+    "icon": "user"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "component",
+      "component": "shared.image-source",
+      "repeatable": false,
+      "required": true
+    },
+    "quote_EN": {
+      "type": "text",
+      "required": true
+    },
+    "quote_ES": {
+      "type": "text"
+    },
+    "linkUrl": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

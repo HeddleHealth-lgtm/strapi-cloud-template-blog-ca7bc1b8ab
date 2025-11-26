@@ -20,11 +20,17 @@
       "type": "component",
       "component": "shared.testimonial",
       "repeatable": true,
-      "required": true
+      "required": false
     },
     "press_logos": {
       "type": "component",
       "component": "shared.image-source",
+      "repeatable": true,
+      "required": false
+    },
+    "featured_stories": {
+      "type": "component",
+      "component": "shared.featured-stories",
       "repeatable": true
     }
   }

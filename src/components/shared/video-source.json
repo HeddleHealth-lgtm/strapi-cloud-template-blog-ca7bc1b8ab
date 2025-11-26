@@ -8,6 +8,7 @@
   "attributes": {
     "type": {
       "type": "enumeration",
+      "required": true,
       "enum": [
         "upload",
         "external"
@@ -47,7 +48,8 @@
       }
     },
     "altDesc": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   },
   "config": {}

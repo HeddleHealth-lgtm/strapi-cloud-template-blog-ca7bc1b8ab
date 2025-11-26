@@ -1,5 +1,21 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface SharedFeaturedStories extends Struct.ComponentSchema {
+  collectionName: 'components_shared_featured_stories';
+  info: {
+    displayName: 'featured-stories';
+    icon: 'user';
+  };
+  attributes: {
+    image: Schema.Attribute.Component<'shared.image-source', false> &
+      Schema.Attribute.Required;
+    linkUrl: Schema.Attribute.String & Schema.Attribute.Required;
+    quote_EN: Schema.Attribute.Text & Schema.Attribute.Required;
+    quote_ES: Schema.Attribute.Text;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface SharedImageSource extends Struct.ComponentSchema {
   collectionName: 'components_shared_image_sources';
   info: {
@@ -7,10 +23,11 @@ export interface SharedImageSource extends Struct.ComponentSchema {
     icon: 'picture';
   };
   attributes: {
-    altDesc: Schema.Attribute.String;
+    altDesc: Schema.Attribute.String & Schema.Attribute.Required;
     file: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     linkUrl: Schema.Attribute.String;
-    type: Schema.Attribute.Enumeration<['upload', 'external']>;
+    type: Schema.Attribute.Enumeration<['upload', 'external']> &
+      Schema.Attribute.Required;
     url: Schema.Attribute.String;
   };
 }
@@ -50,9 +67,10 @@ export interface SharedVideoSource extends Struct.ComponentSchema {
     icon: 'play';
   };
   attributes: {
-    altDesc: Schema.Attribute.String;
+    altDesc: Schema.Attribute.String & Schema.Attribute.Required;
     file: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    type: Schema.Attribute.Enumeration<['upload', 'external']>;
+    type: Schema.Attribute.Enumeration<['upload', 'external']> &
+      Schema.Attribute.Required;
     url: Schema.Attribute.String;
   };
 }
@@ -60,6 +78,7 @@ export interface SharedVideoSource extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'shared.featured-stories': SharedFeaturedStories;
       'shared.image-source': SharedImageSource;
       'shared.press-video': SharedPressVideo;
       'shared.testimonial': SharedTestimonial;

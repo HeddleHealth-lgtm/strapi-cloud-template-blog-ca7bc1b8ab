@@ -444,6 +444,10 @@ export interface ApiLandingPageLandingPage extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    featured_stories: Schema.Attribute.Component<
+      'shared.featured-stories',
+      true
+    >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -453,8 +457,7 @@ export interface ApiLandingPageLandingPage extends Struct.SingleTypeSchema {
     press_logos: Schema.Attribute.Component<'shared.image-source', true>;
     press_videos: Schema.Attribute.Component<'shared.press-video', true>;
     publishedAt: Schema.Attribute.DateTime;
-    testimonials: Schema.Attribute.Component<'shared.testimonial', true> &
-      Schema.Attribute.Required;
+    testimonials: Schema.Attribute.Component<'shared.testimonial', true>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
