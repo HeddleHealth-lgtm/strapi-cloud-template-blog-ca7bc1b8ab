@@ -35,7 +35,7 @@ export interface SharedTestimonial extends Struct.ComponentSchema {
     icon: 'message';
   };
   attributes: {
-    age: Schema.Attribute.String & Schema.Attribute.Required;
+    age: Schema.Attribute.String;
     author: Schema.Attribute.String & Schema.Attribute.Required;
     quoteText_EN: Schema.Attribute.Text & Schema.Attribute.Required;
     quoteText_ES: Schema.Attribute.Text;
