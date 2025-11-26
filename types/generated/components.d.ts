@@ -3,7 +3,7 @@ import type { Schema, Struct } from '@strapi/strapi';
 export interface SharedFeaturedStories extends Struct.ComponentSchema {
   collectionName: 'components_shared_featured_stories';
   info: {
-    displayName: 'featured-stories';
+    displayName: 'featured-story';
     icon: 'user';
   };
   attributes: {
