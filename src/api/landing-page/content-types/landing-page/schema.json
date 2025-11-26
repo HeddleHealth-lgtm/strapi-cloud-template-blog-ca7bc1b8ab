@@ -11,6 +11,11 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "press_videos": {
+      "type": "component",
+      "component": "shared.press-video",
+      "repeatable": true
+    },
     "testimonials": {
       "type": "component",
       "component": "shared.testimonial",

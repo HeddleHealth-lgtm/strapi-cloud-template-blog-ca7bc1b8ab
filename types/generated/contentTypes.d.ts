@@ -451,6 +451,7 @@ export interface ApiLandingPageLandingPage extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     press_logos: Schema.Attribute.Component<'shared.image-source', true>;
+    press_videos: Schema.Attribute.Component<'shared.press-video', true>;
     publishedAt: Schema.Attribute.DateTime;
     testimonials: Schema.Attribute.Component<'shared.testimonial', true> &
       Schema.Attribute.Required;
