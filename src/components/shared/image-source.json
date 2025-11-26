@@ -48,6 +48,9 @@
     },
     "altDesc": {
       "type": "string"
+    },
+    "linkUrl": {
+      "type": "string"
     }
   },
   "config": {}

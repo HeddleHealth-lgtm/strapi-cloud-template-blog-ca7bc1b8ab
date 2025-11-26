@@ -450,6 +450,7 @@ export interface ApiLandingPageLandingPage extends Struct.SingleTypeSchema {
       'api::landing-page.landing-page'
     > &
       Schema.Attribute.Private;
+    press_logos: Schema.Attribute.Component<'shared.image-source', true>;
     publishedAt: Schema.Attribute.DateTime;
     testimonials: Schema.Attribute.Component<'shared.testimonial', true> &
       Schema.Attribute.Required;

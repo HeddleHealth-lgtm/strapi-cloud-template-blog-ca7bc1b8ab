@@ -16,6 +16,11 @@
       "component": "shared.testimonial",
       "repeatable": true,
       "required": true
+    },
+    "press_logos": {
+      "type": "component",
+      "component": "shared.image-source",
+      "repeatable": true
     }
   }
 }

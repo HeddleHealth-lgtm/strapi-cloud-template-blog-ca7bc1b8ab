@@ -9,6 +9,7 @@ export interface SharedImageSource extends Struct.ComponentSchema {
   attributes: {
     altDesc: Schema.Attribute.String;
     file: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    linkUrl: Schema.Attribute.String;
     type: Schema.Attribute.Enumeration<['upload', 'external']>;
     url: Schema.Attribute.String;
   };
