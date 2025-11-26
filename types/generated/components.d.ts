@@ -10,6 +10,7 @@ export interface SharedFeaturedStories extends Struct.ComponentSchema {
     image: Schema.Attribute.Component<'shared.image-source', false> &
       Schema.Attribute.Required;
     linkUrl: Schema.Attribute.String & Schema.Attribute.Required;
+    logo: Schema.Attribute.Component<'shared.image-source', false>;
     quote_EN: Schema.Attribute.Text & Schema.Attribute.Required;
     quote_ES: Schema.Attribute.Text;
     title: Schema.Attribute.String & Schema.Attribute.Required;

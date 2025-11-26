@@ -16,6 +16,11 @@
       "repeatable": false,
       "required": true
     },
+    "logo": {
+      "type": "component",
+      "component": "shared.image-source",
+      "repeatable": false
+    },
     "quote_EN": {
       "type": "text",
       "required": true
